@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.sena.firstproject3114227.ui.sections.dashboard.ParametrosSection
 import com.sena.firstproject3114227.ui.sections.dashboard.SaludoScreen
+import com.sena.firstproject3114227.ui.sections.dashboard.StudentInfoSection
 import com.sena.firstproject3114227.ui.sections.dashboard.TopSection
 
 @Composable
@@ -27,12 +28,14 @@ fun DashboadScreen(modifier: Modifier = Modifier) {
 
         ) {
             Column (modifier = Modifier.padding(bottom = 30.dp),
-                verticalArrangement = Arrangement.Top,
+                verticalArrangement = Arrangement.spacedBy(20.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
 
-            ){ TopSection()
+            ){
+                TopSection()
                 SaludoScreen()
                 ParametrosSection()
+                StudentInfoSection()
             }
 
         }

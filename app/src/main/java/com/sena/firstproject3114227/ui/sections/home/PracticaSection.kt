@@ -42,6 +42,7 @@ fun PracticaSection() {
                     modifier = Modifier.size(30.dp),
                     contentDescription = ""
                 )
+
                 Text("Practica de layout Compose")
             }
         }
