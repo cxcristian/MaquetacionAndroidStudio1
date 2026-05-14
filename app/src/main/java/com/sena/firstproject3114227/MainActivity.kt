@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sena.firstproject3114227.ui.screens.DashboadScreen
 import com.sena.firstproject3114227.ui.screens.HomeScreen
 import com.sena.firstproject3114227.ui.theme.FirstProject3114227Theme
 
@@ -21,7 +22,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             FirstProject3114227Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeScreen(modifier = Modifier.padding(innerPadding))
+                    //HomeScreen(modifier = Modifier.padding(innerPadding))
+                    DashboadScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -30,10 +32,11 @@ class MainActivity : ComponentActivity() {
 
 
 
-@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true, )
 @Composable
 fun HomeScreenPreview() {
     FirstProject3114227Theme {
-        HomeScreen()
+        //HomeScreen()
+        DashboadScreen()
     }
 }
