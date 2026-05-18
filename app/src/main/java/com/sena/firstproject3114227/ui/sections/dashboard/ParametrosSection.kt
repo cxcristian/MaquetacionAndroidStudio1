@@ -21,7 +21,7 @@ import com.sena.firstproject3114227.R
 
 fun ParametrosSection(){
     Row(modifier = Modifier.fillMaxWidth()
-        .padding(10.dp),
+        .padding(0.dp),
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment =  Alignment.CenterVertically) {
         Column(modifier = Modifier,
