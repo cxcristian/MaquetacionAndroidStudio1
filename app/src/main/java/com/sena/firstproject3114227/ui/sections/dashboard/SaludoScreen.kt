@@ -15,6 +15,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.R
+import com.sena.firstproject3114227.ui.theme.deepTeal
+import com.sena.firstproject3114227.ui.theme.mutedText
 
 @Composable
 fun SaludoScreen(){
@@ -24,14 +26,16 @@ fun SaludoScreen(){
         Row () {
             Text( text = "Dashboard Estudiantil",
                 fontSize = 25.sp,
-                fontWeight = FontWeight.Bold)
+                fontWeight = FontWeight.Bold,
+                color = deepTeal)
             Image(
-                painter = painterResource(id = R.drawable.star),
-                modifier = Modifier.size(30.dp),
+                painter = painterResource(id = R.drawable.check_mark),
+                modifier = Modifier.size(28.dp),
                 contentDescription = "")
         }
         Text( text = "Aqui tienes un resumen, de tu progreso",
-            fontSize = 15.sp)
+            fontSize = 15.sp,
+            color = mutedText)
 
     }
 }

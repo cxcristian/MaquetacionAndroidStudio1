@@ -16,6 +16,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.R
+import com.sena.firstproject3114227.ui.theme.deepTeal
+import com.sena.firstproject3114227.ui.theme.mutedText
 
 @Composable
 
@@ -28,31 +30,31 @@ fun ParametrosSection(){
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
             Image(
-                painter = painterResource(id = R.drawable.open_book),
-                modifier = Modifier.size(30.dp),
+                painter = painterResource(id = R.drawable.checklist),
+                modifier = Modifier.size(32.dp),
                 contentDescription = "")
-            Text(text = "12", fontSize = 12.sp,fontWeight = FontWeight.Bold)
-            Text(text = "Cursos", fontSize = 12.sp)
+            Text(text = "12", fontSize = 12.sp,fontWeight = FontWeight.Bold, color = deepTeal)
+            Text(text = "Cursos", fontSize = 12.sp, color = mutedText)
         }
         Column(modifier = Modifier,
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
             Image(
-                painter = painterResource(id = R.drawable.check_mark),
-                modifier = Modifier.size(30.dp),
+                painter = painterResource(id = R.drawable.avance1),
+                modifier = Modifier.size(32.dp),
                 contentDescription = "")
-            Text(text = "85%", fontSize = 12.sp,fontWeight = FontWeight.Bold)
-            Text(text = "Progreso", fontSize = 12.sp)
+            Text(text = "85%", fontSize = 12.sp,fontWeight = FontWeight.Bold, color = deepTeal)
+            Text(text = "Progreso", fontSize = 12.sp, color = mutedText)
         }
         Column(modifier = Modifier,
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
             Image(
-                painter = painterResource(id = R.drawable.star),
-                modifier = Modifier.size(30.dp),
+                painter = painterResource(id = R.drawable.graduation_hat),
+                modifier = Modifier.size(32.dp),
                 contentDescription = "")
-            Text(text = "3", fontSize = 12.sp,fontWeight = FontWeight.Bold)
-            Text(text = "Logros", fontSize = 12.sp)
+            Text(text = "3", fontSize = 12.sp,fontWeight = FontWeight.Bold, color = deepTeal)
+            Text(text = "Logros", fontSize = 12.sp, color = mutedText)
         }
     }
 }

@@ -13,17 +13,20 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.R
+import com.sena.firstproject3114227.ui.theme.deepTeal
+import com.sena.firstproject3114227.ui.theme.mutedText
 
 @Composable
-fun  TheaderSection(){
-    Row(modifier = Modifier.padding(5.dp)) {Column() {
-        Text(text = "Mis Tareas", fontWeight = FontWeight.Bold, fontSize = 30.sp)
-        Text(text = "Hoy es un buen dia para codificar ✨\uD83D\uDCBB")
+fun TheaderSection() {
+    Row(modifier = Modifier.padding(8.dp)) {
+        Column() {
+            Text(text = "Mis Tareas", fontWeight = FontWeight.Bold, fontSize = 30.sp)
+            Text(text = "Hoy es un buen dia para organizar y codificar", color = mutedText)
+        }
+        Image(
+            painter = painterResource(R.drawable.island),
+            modifier = Modifier.size(48.dp),
+            contentDescription = ""
+        )
     }
-        Image(painter = painterResource(R.drawable.sun),
-            modifier = Modifier.size(50.dp),
-            contentDescription = "") }
-
-
-
 }

@@ -13,7 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.sena.firstproject3114227.ui.theme.Purple40
+import com.sena.firstproject3114227.ui.theme.coralAccent
+import com.sena.firstproject3114227.ui.theme.deepTeal
 
 @Composable
 fun ButtonsSection() {
@@ -26,10 +27,10 @@ fun ButtonsSection() {
             modifier = Modifier,
             onClick = {},
             colors = ButtonDefaults.buttonColors(
-                containerColor = Purple40,
+                containerColor = deepTeal,
                 contentColor = Color.White
             ),
-            shape = RoundedCornerShape(16.dp)
+            shape = RoundedCornerShape(24.dp)
         ) {
 
             Text("Editar", fontWeight = FontWeight.Bold)
@@ -38,10 +39,10 @@ fun ButtonsSection() {
             modifier = Modifier,
             onClick = {},
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Green,
+                containerColor = coralAccent,
                 contentColor = Color.White
             ),
-            shape = RoundedCornerShape(16.dp)
+            shape = RoundedCornerShape(24.dp)
         ) {
 
             Text("Guardar", fontWeight = FontWeight.Bold)

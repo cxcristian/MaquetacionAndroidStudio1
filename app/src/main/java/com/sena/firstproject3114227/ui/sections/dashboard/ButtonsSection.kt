@@ -20,7 +20,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.sena.firstproject3114227.ui.theme.Purple40
+import com.sena.firstproject3114227.ui.theme.coralAccent
+import com.sena.firstproject3114227.ui.theme.deepTeal
 
 @Composable
 fun ButtonsSection() {
@@ -28,9 +29,9 @@ fun ButtonsSection() {
         horizontalArrangement = Arrangement.Center)
     {
         OutlinedButton(onClick = {},
-            colors = ButtonDefaults.outlinedButtonColors( contentColor = Purple40),
-            border = BorderStroke(1.dp, Purple40),
-            shape = RoundedCornerShape(16.dp)
+            colors = ButtonDefaults.outlinedButtonColors( contentColor = deepTeal),
+            border = BorderStroke(1.dp, deepTeal),
+            shape = RoundedCornerShape(24.dp)
             ){
             Text("Ver detalles")
         }
@@ -38,10 +39,10 @@ fun ButtonsSection() {
         Button(
             onClick = {},
             colors = ButtonDefaults.buttonColors(
-                containerColor = Purple40,
+                containerColor = coralAccent,
                 contentColor = Color.White
             ),
-            shape = RoundedCornerShape(16.dp)
+            shape = RoundedCornerShape(24.dp)
         ) {
             Text("Continuar", fontSize = 14.sp, fontWeight = FontWeight.Bold)
         }
