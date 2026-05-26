@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.sena.firstproject3114227.ui.sections.home.ButtonsSection
 import com.sena.firstproject3114227.ui.sections.home.InfoSection
 import com.sena.firstproject3114227.ui.sections.home.PracticaSection
@@ -20,7 +21,7 @@ import com.sena.firstproject3114227.ui.sections.home.WelcomeSection
 
 @Composable
 
-fun HomeScreen(modifier: Modifier = Modifier) {
+fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
     Surface(modifier = modifier
         .padding(30.dp)) {
         Column(modifier = Modifier,
@@ -35,7 +36,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically) { ProfileSection() }
         Row(modifier = Modifier) { InfoSection() }
-        ButtonsSection()
+        ButtonsSection(navController)
             PracticaSection()
         }
 

@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.sena.firstproject3114227.ui.sections.dashboard.ButtonsSection
 import com.sena.firstproject3114227.ui.sections.dashboard.ParametrosSection
 import com.sena.firstproject3114227.ui.sections.dashboard.SaludoScreen
@@ -21,7 +22,7 @@ import com.sena.firstproject3114227.ui.sections.home.InfoSection
 import com.sena.firstproject3114227.ui.sections.home.PracticaSection
 
 @Composable
-fun DashboadScreen(modifier: Modifier = Modifier) {
+fun DashboadScreen(modifier: Modifier = Modifier, navController: NavController) {
     Scaffold(modifier = modifier) { innerPadding ->
         Surface(
             modifier = Modifier
@@ -39,7 +40,7 @@ fun DashboadScreen(modifier: Modifier = Modifier) {
                 SaludoScreen()
                 ParametrosSection()
                 StudentInfoSection()
-                ButtonsSection()
+                ButtonsSection(navController)
                 PracticaSection()
             }
 

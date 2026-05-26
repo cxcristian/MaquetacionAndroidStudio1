@@ -10,6 +10,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.sena.firstproject3114227.ui.sections.tareas.BigBoxImageSection
 import com.sena.firstproject3114227.ui.sections.tareas.ProximaTareaSection
 import com.sena.firstproject3114227.ui.sections.tareas.ResumenTareasSection
@@ -18,7 +19,7 @@ import com.sena.firstproject3114227.ui.sections.tareas.TheaderSection
 
 @Composable
 
-fun TareaScreen(modifier: Modifier = Modifier){
+fun TareaScreen(modifier: Modifier = Modifier, navController: NavController){
     Surface(modifier = Modifier
         .fillMaxSize())
     { Column(modifier = Modifier.padding(20.dp)){

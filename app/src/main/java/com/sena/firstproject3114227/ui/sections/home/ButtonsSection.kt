@@ -13,10 +13,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.sena.firstproject3114227.ui.theme.Purple40
 
 @Composable
-fun ButtonsSection() {
+fun ButtonsSection(navController: NavController) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(10.dp, Alignment.CenterHorizontally),
@@ -36,7 +37,7 @@ fun ButtonsSection() {
         }
         androidx.compose.material3.Button(
             modifier = Modifier,
-            onClick = {},
+            onClick = {navController.navigate("dashboard")},
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color.Green,
                 contentColor = Color.White
@@ -44,7 +45,7 @@ fun ButtonsSection() {
             shape = RoundedCornerShape(16.dp)
         ) {
 
-            Text("Guardar", fontWeight = FontWeight.Bold)
+            Text("Navegar a dashboard", fontWeight = FontWeight.Bold)
         }
     }
 }

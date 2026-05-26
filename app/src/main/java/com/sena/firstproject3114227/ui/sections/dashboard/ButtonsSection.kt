@@ -20,10 +20,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.sena.firstproject3114227.ui.theme.Purple40
 
 @Composable
-fun ButtonsSection() {
+fun ButtonsSection(navController: NavController) {
     Row (modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.Center)
     {
@@ -36,14 +37,14 @@ fun ButtonsSection() {
         }
         Spacer(modifier = Modifier.width(60.dp))
         Button(
-            onClick = {},
+            onClick = {navController.navigate(route = "home")},
             colors = ButtonDefaults.buttonColors(
                 containerColor = Purple40,
                 contentColor = Color.White
             ),
             shape = RoundedCornerShape(16.dp)
         ) {
-            Text("Continuar", fontSize = 14.sp, fontWeight = FontWeight.Bold)
+            Text("Volver", fontSize = 14.sp, fontWeight = FontWeight.Bold)
         }
 
     }
