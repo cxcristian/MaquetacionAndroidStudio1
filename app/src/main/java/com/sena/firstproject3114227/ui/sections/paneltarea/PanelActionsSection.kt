@@ -1,4 +1,4 @@
-package com.sena.firstproject3114227.ui.sections.tareas
+package com.sena.firstproject3114227.ui.sections.paneltarea
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -22,56 +22,58 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.R
-import com.sena.firstproject3114227.ui.theme.coralAccent
 import com.sena.firstproject3114227.ui.theme.deepTeal
 
 @Composable
-fun TareasButtonSection() {
-
+fun PanelActionsSection() {
     Row(
         modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.Center
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
     ) {
         OutlinedButton(
             onClick = {},
             colors = ButtonDefaults.outlinedButtonColors(contentColor = deepTeal),
             border = BorderStroke(1.dp, deepTeal),
-            shape = RoundedCornerShape(18.dp)
+            shape = RoundedCornerShape(10.dp)
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
-                    painter = painterResource(R.drawable.delete),
+                    painter = painterResource(id = R.drawable.calendar),
                     contentDescription = "",
-                    modifier = Modifier.size(20.dp)
+                    modifier = Modifier.size(18.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "Eliminar Completadas",
-                    fontSize = 10.sp,
+                    text = "Ver calendario",
+                    fontSize = 11.sp,
                     fontWeight = FontWeight.Bold
                 )
             }
         }
-        Spacer(modifier = Modifier.width(20.dp))
+        Spacer(modifier = Modifier.width(14.dp))
         Button(
             onClick = {},
             colors = ButtonDefaults.buttonColors(
-                containerColor = coralAccent,
+                containerColor = deepTeal,
                 contentColor = Color.White
             ),
-            shape = RoundedCornerShape(18.dp)
+            shape = RoundedCornerShape(10.dp)
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(text = "+", fontSize = 25.sp, color = Color.White, fontWeight = FontWeight.Bold)
+                Text(
+                    text = "+",
+                    fontSize = 24.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold
+                )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = " Nueva Tarea",
-                    fontSize = 10.sp,
+                    text = "Nueva tarea",
+                    fontSize = 11.sp,
                     fontWeight = FontWeight.Bold
                 )
             }
         }
-
     }
-
 }

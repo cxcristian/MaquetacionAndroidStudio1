@@ -1,6 +1,5 @@
 package com.sena.firstproject3114227.ui.sections.dashboard
 
-import android.media.Image
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -16,6 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.R
+import com.sena.firstproject3114227.ui.theme.inkTitle
 
 @Composable
 fun TopSection(){
@@ -29,19 +29,20 @@ fun TopSection(){
     ) {
         //icono 1
         Image(
-            painter = painterResource(id = R.drawable.bell),
-            modifier = Modifier.size(40.dp),
+            painter = painterResource(id = R.drawable.calendar),
+            modifier = Modifier.size(38.dp),
             contentDescription = ""
         )
         //texto
         Text( text = "Dashboard Estudiantil",
             fontSize = 20.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            color = inkTitle
         )
         //icono 2
         Image(
-            painter = painterResource(id = R.drawable.logo_profile),
-            modifier = Modifier.size(40.dp),
+            painter = painterResource(id = R.drawable.usuario),
+            modifier = Modifier.size(42.dp),
             contentDescription = ""
         )
         }

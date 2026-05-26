@@ -18,32 +18,32 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.sena.firstproject3114227.R
-import com.sena.firstproject3114227.ui.theme.lightBlue
-import com.sena.firstproject3114227.ui.theme.softGray
+import com.sena.firstproject3114227.ui.theme.amberSoft
+import com.sena.firstproject3114227.ui.theme.deepTeal
 
 @Composable
 fun PracticaSection() {
     Surface(
         modifier = Modifier
-            .padding(10.dp),
-        shape = RoundedCornerShape(16.dp),
-        color = lightBlue
+            .padding(8.dp),
+        shape = RoundedCornerShape(22.dp),
+        color = amberSoft
     ) {
         Box(
             modifier = Modifier.fillMaxWidth()
-                .padding(20.dp),
+                .padding(22.dp),
             contentAlignment = Alignment.Center
         ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.informacion),
-                    modifier = Modifier.size(30.dp),
+                    painter = painterResource(id = R.drawable.open_book),
+                    modifier = Modifier.size(34.dp),
                     contentDescription = ""
                 )
 
-                Text("Practica de layout Compose")
+                Text("Practica de layout Compose", color = deepTeal)
             }
         }
     }

@@ -16,11 +16,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.R
+import com.sena.firstproject3114227.ui.theme.inkTitle
+import com.sena.firstproject3114227.ui.theme.mutedText
 
 @Composable
 
 fun ResumenTareasSection(){
-    Text(text = "Resumen", fontWeight = FontWeight.Bold, fontSize = 15.sp)
+    Text(text = "Resumen", fontWeight = FontWeight.Bold, fontSize = 16.sp, color = inkTitle)
     Row(modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment = Alignment.CenterVertically) {
@@ -32,7 +34,7 @@ fun ResumenTareasSection(){
                 modifier = Modifier.size(40.dp),
                 contentDescription = "",
                 contentScale = ContentScale.Fit)
-            Text(text = "Pendiente")
+            Text(text = "Pendiente", color = mutedText)
         }
         Column(modifier = Modifier,
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -41,7 +43,7 @@ fun ResumenTareasSection(){
                 modifier = Modifier.size(40.dp),
                 contentDescription = "",
                 contentScale = ContentScale.Fit)
-            Text(text = "Completadas")
+            Text(text = "Completadas", color = mutedText)
         }
         Column(modifier = Modifier,
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -50,7 +52,7 @@ fun ResumenTareasSection(){
                 modifier = Modifier.size(40.dp),
                 contentDescription = "",
                 contentScale = ContentScale.Fit)
-            Text(text = "En progreso")
+            Text(text = "En progreso", color = mutedText)
         }
 
     }

@@ -3,16 +3,16 @@ package com.sena.firstproject3114227.ui.screens
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.sena.firstproject3114227.ui.theme.creamBackground
 import com.sena.firstproject3114227.ui.sections.home.ButtonsSection
 import com.sena.firstproject3114227.ui.sections.home.InfoSection
 import com.sena.firstproject3114227.ui.sections.home.PracticaSection
@@ -23,9 +23,12 @@ import com.sena.firstproject3114227.ui.sections.home.WelcomeSection
 
 fun HomeScreen(modifier: Modifier = Modifier, navController: NavController) {
     Surface(modifier = modifier
-        .padding(30.dp)) {
+        .padding(22.dp),
+        color = creamBackground,
+        shape = RoundedCornerShape(22.dp)
+    ) {
         Column(modifier = Modifier,
-            verticalArrangement = Arrangement.spacedBy(16.dp),
+            verticalArrangement = Arrangement.spacedBy(18.dp),
             horizontalAlignment = Alignment.CenterHorizontally
             ) {
 

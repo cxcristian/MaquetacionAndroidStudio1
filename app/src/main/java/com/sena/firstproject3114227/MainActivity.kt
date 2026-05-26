@@ -22,9 +22,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sena.firstproject3114227.ui.navigation.AppNavigation
-import com.sena.firstproject3114227.ui.screens.DashboadScreen
-import com.sena.firstproject3114227.ui.screens.HomeScreen
-import com.sena.firstproject3114227.ui.screens.TareaScreen
 import com.sena.firstproject3114227.ui.theme.FirstProject3114227Theme
 
 class MainActivity : ComponentActivity() {
@@ -34,10 +31,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             FirstProject3114227Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    //HomeScreen(modifier = Modifier.padding(innerPadding))
-                    //DashboadScreen(modifier = Modifier.padding(innerPadding))
-                    //TareaScreen(modifier = Modifier.padding(innerPadding))
-                    //LazyCol(modifier = Modifier.padding(innerPadding))
                     AppNavigation(modifier = Modifier.padding(innerPadding))
                 }
             }
@@ -88,7 +81,6 @@ fun HomeScreenPreview() {
         //HomeScreen()
         //DashboadScreen()
         //TareaScreen()
-        //LazyCol(modifier = Modifier.padding())
         AppNavigation(modifier = Modifier.padding())
     }
 }
