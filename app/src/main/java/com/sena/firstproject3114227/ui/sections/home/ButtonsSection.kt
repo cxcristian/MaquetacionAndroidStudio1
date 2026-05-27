@@ -38,7 +38,7 @@ fun ButtonsSection(navController: NavController) {
         }
         androidx.compose.material3.Button(
             modifier = Modifier,
-            onClick = {navController.navigate("dashboard")},
+            onClick = {navController.navigate("dashboard/5?nombre=carlos")},
             colors = ButtonDefaults.buttonColors(
                 containerColor = coralAccent,
                 contentColor = Color.White

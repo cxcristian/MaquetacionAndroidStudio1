@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Text
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.sena.firstproject3114227.ui.sections.dashboard.ButtonsSection
@@ -20,7 +21,7 @@ import com.sena.firstproject3114227.ui.sections.home.PracticaSection
 import com.sena.firstproject3114227.ui.theme.skySoft
 
 @Composable
-fun DashboadScreen(modifier: Modifier = Modifier, navController: NavController) {
+fun DashboadScreen(modifier: Modifier = Modifier, navController: NavController, id: Int, nombre: String) {
     Surface(
         modifier = modifier
             .padding(18.dp)
@@ -33,6 +34,7 @@ fun DashboadScreen(modifier: Modifier = Modifier, navController: NavController) 
             verticalArrangement = Arrangement.spacedBy(18.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ){
+            Text(text = "$id: $nombre")
             TopSection()
             SaludoScreen()
             ParametrosSection()
